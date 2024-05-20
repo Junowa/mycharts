@@ -18,17 +18,6 @@ spec:
   - name: v1
     served: true
     storage: true
-    additionalPrinterColumns:
-      - name: Replicas
-        type: integer
-        description: The number of pods launched by the MyApp
-        jsonPath: .spec.replicas
-      - name: Version
-        type: string
-        jsonPath: .spec.version
-      - name: Age
-        type: date
-        jsonPath: .metadata.creationTimestamp
     schema:
       openAPIV3Schema:
         type: object

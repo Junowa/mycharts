@@ -34,3 +34,24 @@ spec:
               language:
                 type: string
             x-kubernetes-preserve-unknown-fields: true
+  - name: v2
+    served: true
+    storage: true
+    schema:
+      openAPIV3Schema:
+        type: object
+        properties:
+          spec:
+            type: object
+            properties:
+              replicas:
+                type: integer
+              owner:
+                type: string
+              environment:
+                type: string
+              version:
+                type: string
+              language:
+                type: string
+            x-kubernetes-preserve-unknown-fields: true

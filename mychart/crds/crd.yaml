@@ -23,4 +23,14 @@ spec:
         type: object
         properties:
           spec:
+            type: object
+            properties:
+              replicas:
+                type: string
+              environment:
+                type: string
+              version:
+                type: string
+              language:
+                type: string
             x-kubernetes-preserve-unknown-fields: true
